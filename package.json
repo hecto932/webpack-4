@@ -7,12 +7,15 @@
     "build": "webpack --entry ./index.js --output ./bundle.js --mode development",
     "build:local": "webpack --mode production",
     "build:external": "webpack --config ./external/webpack.config.js",
-    "build:multi": "webpack --config ./multi-entry-points/webpack.config.js"
+    "build:multi": "webpack --config ./multi-entry-points/webpack.config.js",
+    "build:css": "webpack --config ./css-style-loader/webpack.config.js"
   },
   "author": "Hector Flores <hecto932@gmail.com>",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "css-loader": "^3.0.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.6"
   }
