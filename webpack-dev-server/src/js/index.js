@@ -1,3 +1,12 @@
 import '../css/index.css'
 
-document.body.innerHTML = '<p>Hello world!</p>'
+import text from './text'
+
+text()
+
+if (module.hot) {
+  module.hot.accept('./text', function () {
+    console.log('He recargado en caliente')
+    text()
+  })
+}
