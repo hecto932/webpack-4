@@ -18,6 +18,9 @@ You can exec `npm run ...`
 * `build:react`
 * `build:url-loader`
 * `build:prepro`
+* `build:prevent-duplication`
+* `build:dll`
+* `build:prevent-duplication-fast`
 
 ## Liscense
 
