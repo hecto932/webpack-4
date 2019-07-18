@@ -9,7 +9,7 @@ body {
   font-family: system-ui;
   color: white;
   text-shadow: 1px 1px 1px black;
-  animation: 300ms latido infinite;
+  /* animation: 300ms latido infinite; */
 }
 
 @keyframes latido {

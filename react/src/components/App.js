@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
+import data from './data.json'
 
-function App () {
+import Loader from './Loader'
+
+console.log(data)
+
+function App() {
+  const [loaderList, setLoaderList] = useState([])
+
+  function handleClick() {
+    setLoaderList(data.loaders)
+  }
+
   return (
     <div>
-      Que linda aplicacion hecha en react js
+      React.js application
+      <ul>
+        {loaderList.map(item => (
+          <Loader key={item.id} name={item.name} />
+        ))}
+      </ul>
+      <button onClick={handleClick}>Mostrar aprendido</button>
     </div>
   )
 }
